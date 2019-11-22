@@ -1,6 +1,5 @@
 #include <iostream>
-
-
+#include <string.h>
 /*
 	Conta todas as letras 'letra' contidas em 'texto'
 */
@@ -14,9 +13,6 @@ int contaLetras(char letra, string texto)
 	}
 }
 
-/*
-	Substitui todas as ocorrencias de 'letra1' por 'letra2' contidas em 'texto'
-*/
 void substituirLetra(char letra1,char letra2, string texto)
 {
 		for(int i=0;i<texto.length();i++)
@@ -31,6 +27,17 @@ void substituirLetra(char letra1,char letra2, string texto)
 */
 int contaPalavras(string palavra, string texto)
 {
+	int c;
+	string copia;
+	for(int i=0;i<texto.length();i++){
+		for(int i=0;i<texto.length();i++){
+			copia= texto[i];
+			if(texto[i]==" ")
+				break;
+		}
+		if(palavra==copia)
+			c++;
+	}
 }
 
 /*
@@ -38,14 +45,11 @@ int contaPalavras(string palavra, string texto)
 */
 void substituirPalavras(string palavra1, string palavra2, string texto)
 {
+	
 }
 
 int main(){
 
 	cout << "Entre com o texto para fazer o teste:";
-
-
-
-
 	return 0;
 }
