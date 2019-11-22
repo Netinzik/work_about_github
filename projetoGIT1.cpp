@@ -26,7 +26,7 @@ int contaPalavras(string palavra, string texto)
 	int c;
 	string copia;
 	for(int i=0;i<texto.length();i++){
-		for(int i=0;i<texto.length();i++){
+		for(int i=0;i<palavra.length();i++){
 			copia= texto[i];
 			if(texto[i]==" ")
 				break;
@@ -41,7 +41,22 @@ int contaPalavras(string palavra, string texto)
 */
 void substituirPalavras(string palavra1, string palavra2, string texto)
 {
-	
+	int c;
+	string copia;
+	for(int i=0;i<texto.length();i++){
+		for(int i=0;i<palavra1.length();i++){
+			copia= texto[i];
+			if(texto[i]==" ")
+				break;
+		}
+		if(palavra1==copia)
+			for(int d=0;d<palavra2.length();d++){
+				for(int k=0;d<palavra2.length();d++){
+						copia= palavra2[k];
+				}
+				texto[d]= copia[d];
+			}
+	}
 }
 
 int main(){
