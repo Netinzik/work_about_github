@@ -6,6 +6,12 @@
 */
 int contaLetras(char letra, string texto)
 {
+	int c;
+	for(int i=0; i<texto.length();i++)
+	{
+		if(letra==texto[i])
+		c++;
+	}
 }
 
 /*
@@ -13,6 +19,7 @@ int contaLetras(char letra, string texto)
 */
 void substituirLetra(char letra1,char letra2, string texto)
 {
+	
 }
 
 /*
